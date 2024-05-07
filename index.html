@@ -95,7 +95,8 @@ This app plots and prints data received by a serial port from an <a href="https:
       T = countUp*deltaT /1000.0;
       ph1 = PI/180.0*p1;
       ph2 = PI/180.0*p2;
-      result = String(countUp) + " " + String(sin(2*PI*f1*T +ph1)) + " " + String(sin(2*PI*f2*T+ph2))+ " " + String(millis());
+      result = String(countUp) + " " + String(sin(2*PI*f1*T +ph1)) + " " ;
+      result +=  String(sin(2*PI*f2*T+ph2))+ " " + String(millis());
       Serial.println(result);
       digitalWrite(ledPin, ledState);
       previousMillis = millis();

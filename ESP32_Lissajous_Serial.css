@@ -1,10 +1,7 @@
+html,
 body {
     background-color: #00b5e2;
 }
-
-
-
-
        
 
 block_container {
@@ -79,3 +76,39 @@ input[type="text"]{
       -webkit-border-radius:5px;
   outline: 2px;
 }
+
+
+only screen and (min-width:321px) and (max-width:768px) {
+    h1 {
+        font-size: 20pt;
+    }
+
+    h2 {
+        font-zise: 15pt;
+    }
+}
+
+
+@media only screen and (max-width:320px) {
+    h1 {
+        font-size: 20pt;
+    }
+    
+    h2 {
+        font-size: 15pt;
+    }
+    
+    .date {
+        display: none;
+    }
+    
+    .source {
+        display: none;
+    }
+    
+    img {
+        display: none;
+    }
+    
+    } 
+
